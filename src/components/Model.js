@@ -26,8 +26,8 @@ export default class Model extends Component {
                       <h5>Item added to the cart</h5>
                       <img src={img} className="img-fluid" alt="product" />
                       <h5>{title}</h5>
-                      <h5 className="text-muted">price: ₦{price}</h5>
-                      <Link to='/'>
+                      <h5 className="text-muted">price: ${price}</h5>
+                      <Link to="/">
                         <ButtonContainer
                           onClick={() => {
                             closeModel();
@@ -36,7 +36,7 @@ export default class Model extends Component {
                           store
                         </ButtonContainer>
                       </Link>
-                      <Link to='/cart'>
+                      <Link to="/cart">
                         <ButtonContainer
                           cart
                           onClick={() => {
